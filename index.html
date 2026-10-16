@@ -1,0 +1,1205 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Politique de Confidentialité — ChimioCare</title>
+    <meta name="description" content="Politique de confidentialité officielle de l'application mobile ChimioCare (Google Play Store).">
+    <style>
+        :root {
+            --primary-color: #0284c7;
+            --primary-dark: #0369a1;
+            --primary-light: #e0f2fe;
+            --text-color: #1e293b;
+            --text-muted: #64748b;
+            --bg-body: #f8fafc;
+            --bg-card: #ffffff;
+            --border-color: #e2e8f0;
+            --accent-green: #10b981;
+            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-body);
+            color: var(--text-color);
+            line-height: 1.7;
+            padding: 20px 15px;
+        }
+
+        .container {
+            max-width: 920px;
+            margin: 0 auto;
+            background: var(--bg-card);
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            padding: 40px;
+            border: 1px solid var(--border-color);
+        }
+
+        /* Top Bar & Language Selector */
+        .top-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f1f5f9;
+            padding: 12px 20px;
+            border-radius: 8px;
+            margin-bottom: 28px;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .top-bar .brand {
+            font-weight: 700;
+            color: var(--primary-dark);
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .lang-selector-wrapper {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .lang-selector-wrapper label {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--text-color);
+        }
+
+        .lang-select {
+            padding: 8px 14px;
+            font-size: 0.95rem;
+            border-radius: 6px;
+            border: 1px solid var(--border-color);
+            background-color: #ffffff;
+            color: var(--text-color);
+            font-weight: 600;
+            cursor: pointer;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+
+        .lang-select:focus {
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.15);
+        }
+
+        header {
+            border-bottom: 2px solid var(--primary-light);
+            padding-bottom: 24px;
+            margin-bottom: 32px;
+            text-align: center;
+        }
+
+        header h1 {
+            color: var(--primary-dark);
+            font-size: 2.2rem;
+            margin-bottom: 8px;
+            font-weight: 700;
+        }
+
+        header p.subtitle {
+            color: var(--text-muted);
+            font-size: 1.05rem;
+        }
+
+        .meta-info {
+            display: inline-block;
+            background-color: var(--primary-light);
+            color: var(--primary-dark);
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-top: 12px;
+        }
+
+        nav.toc {
+            background-color: #f1f5f9;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 36px;
+        }
+
+        nav.toc h2 {
+            font-size: 1.1rem;
+            margin-bottom: 12px;
+            color: var(--text-color);
+        }
+
+        nav.toc ul {
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 8px;
+        }
+
+        nav.toc a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+        }
+
+        nav.toc a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            margin-bottom: 36px;
+        }
+
+        h2 {
+            color: var(--primary-dark);
+            font-size: 1.4rem;
+            margin-bottom: 16px;
+            padding-bottom: 6px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        p {
+            margin-bottom: 14px;
+            color: var(--text-color);
+        }
+
+        ul {
+            margin-left: 24px;
+            margin-bottom: 16px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .highlight-box {
+            background-color: #eff6ff;
+            border-left: 4px solid var(--primary-color);
+            padding: 16px 20px;
+            border-radius: 0 8px 8px 0;
+            margin: 20px 0;
+        }
+
+        .highlight-box.health {
+            background-color: #ecfdf5;
+            border-left-color: var(--accent-green);
+        }
+
+        .highlight-box strong {
+            color: var(--primary-dark);
+        }
+
+        .highlight-box.health strong {
+            color: #047857;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 0.95rem;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 12px 16px;
+            border: 1px solid var(--border-color);
+        }
+
+        th {
+            background-color: #f1f5f9;
+            color: var(--primary-dark);
+            font-weight: 600;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f8fafc;
+        }
+
+        footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        .lang-content {
+            display: none;
+        }
+
+        .lang-content.active {
+            display: block;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px 16px;
+            }
+
+            header h1 {
+                font-size: 1.75rem;
+            }
+
+            .top-bar {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            nav.toc ul {
+                grid-template-columns: 1fr;
+            }
+
+            table {
+                display: block;
+                overflow-x: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- BARRE SUPERIEURE : SÉLECTEUR DE LANGUE -->
+    <div class="top-bar">
+        <div class="brand">
+            🏥 <span>ChimioCare Privacy Policy</span>
+        </div>
+        <div class="lang-selector-wrapper">
+            <label for="langSelect">🌐 Langue / Language:</label>
+            <select id="langSelect" class="lang-select" onchange="switchLanguage(this.value)">
+                <option value="fr">Français (FR)</option>
+                <option value="en">English (EN)</option>
+                <option value="de">Deutsch (DE)</option>
+                <option value="lb">Lëtzebuergesch (LB)</option>
+                <option value="es">Español (ES)</option>
+                <option value="it">Italiano (IT)</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- =================================================================== -->
+    <!-- 1. FRANÇAIS (FR) -->
+    <!-- =================================================================== -->
+    <div id="lang-fr" class="lang-content active">
+        <header>
+            <h1>Politique de Confidentialité</h1>
+            <p class="subtitle">Application mobile <strong>ChimioCare</strong> (com.chimiocare.app)</p>
+            <span class="meta-info">Dernière mise à jour : 24 février 2025</span>
+        </header>
+
+        <nav class="toc">
+            <h2>Sommaire</h2>
+            <ul>
+                <li><a href="#fr-intro">1. Introduction et Objet</a></li>
+                <li><a href="#fr-donnees">2. Données collectées et finalités</a></li>
+                <li><a href="#fr-health">3. Engagements Health Connect</a></li>
+                <li><a href="#fr-auto">4. Autorisations de l'appareil</a></li>
+                <li><a href="#fr-partage">5. Partage et Tiers</a></li>
+                <li><a href="#fr-stockage">6. Stockage et Sécurité</a></li>
+                <li><a href="#fr-droits">7. Vos droits (RGPD)</a></li>
+                <li><a href="#fr-enfants">8. Protection des mineurs</a></li>
+                <li><a href="#fr-contact">9. Contact</a></li>
+            </ul>
+        </nav>
+
+        <section id="fr-intro">
+            <h2>1. Introduction et Objet</h2>
+            <p>
+                La présente Politique de Confidentialité décrit la manière dont l'application mobile <strong>ChimioCare</strong> (ci-après « l'Application »), disponible sur le Google Play Store sous le package <code>com.chimiocare.app</code>, collecte, utilise, stocke et protège vos informations personnelles et données de santé.
+            </p>
+            <p>
+                L'Application ChimioCare a pour objectif d'accompagner les patients dans leur suivi de traitement de chimiothérapie, la gestion de leurs rendez-vous médicaux, la prise de médicaments, le suivi de leurs symptômes et de leurs métriques de santé au quotidien.
+            </p>
+            <div class="highlight-box">
+                <strong>Respect de la vie privée et conformité :</strong> Nous attachons une importance capitale à la protection de vos données personnelles et médicales. L'Application est conçue dans le respect strict du Règlement Général sur la Protection des Données (RGPD - UE 2016/679) et des Règles relatives aux données utilisateur du Google Play Store.
+            </div>
+        </section>
+
+        <section id="fr-donnees">
+            <h2>2. Données collectées et finalités d'utilisation</h2>
+            <p>L'Application collecte et traite uniquement les données strictement nécessaires au bon fonctionnement de vos outils de suivi médical :</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Catégorie de données</th>
+                        <th>Données spécifiques</th>
+                        <th>Finalité du traitement</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Données de Santé & Métriques</strong></td>
+                        <td>Fréquence cardiaque, rythme cardiaque au repos, saturation en oxygène (SpO2), poids, tension artérielle, température corporelle, suivi du sommeil, nombre de pas.</td>
+                        <td>Présentation sous forme de tableaux de bord et de graphiques pour vous aider à suivre votre condition physique au cours de votre parcours de soin.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Suivi du Traitement & Médicaments</strong></td>
+                        <td>Cycles de chimiothérapie, calendrier des séances, ordonnances scannées, rappels de prises médication, journal de bord.</td>
+                        <td>Gestion et organisation de vos traitements, envois de rappels locaux et prévention des oublis.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Documents & Médias</strong></td>
+                        <td>Photos d'ordonnance, scans de compte-rendu médical, photos de suivi intégrées au journal de bord.</td>
+                        <td>Numérisation et centralisation de vos documents médicaux personnels dans l'application.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Localisation (Optionnelle)</strong></td>
+                        <td>Coordonnées de géolocalisation approximatives ou précises (si autorisées).</td>
+                        <td>Saisie automatique et pré-remplissage du lieu de vos rendez-vous médicaux ou de la localisation associée à vos photos/notes.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Données Techniques & Identifiants</strong></td>
+                        <td>Identifiants publicitaires anonymisés (AdMob), état de l'abonnement/achats in-app (RevenueCat).</td>
+                        <td>Affichage de publicités non intrusives et gestion des fonctionnalités Premium / abonnements de l'application.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="fr-health">
+            <h2>3. Engagements stricts relatifs à Google Health Connect</h2>
+            <div class="highlight-box health">
+                <strong>Engagement de confidentialité Health Connect (Google Play Policy) :</strong><br>
+                L'Application accède aux données de santé via l'API <strong>Health Connect</strong> d'Android (notamment rythme cardiaque, tension, saturation en oxygène, température, poids, sommeil, pas) uniquement à la demande expresse de l'utilisateur.
+                <ul>
+                    <li>Les données lues depuis Health Connect sont utilisées <strong>exclusivement</strong> pour fournir et améliorer les fonctionnalités de suivi de santé au sein de l'Application ChimioCare.</li>
+                    <li>Les données issues de Health Connect ne sont <strong>jamais vendues, louées ni transférées</strong> à des tiers.</li>
+                    <li>Les données Health Connect ne sont <strong>jamais utilisées à des fins publicitaires</strong>, marketing ou pour du courtage de données (data brokerage).</li>
+                    <li>Les données ne sont pas partagées avec des organismes de crédit ni des compagnies d'assurance.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="fr-auto">
+            <h2>4. Autorisations requises sur votre appareil</h2>
+            <p>Pour fournir l'ensemble de ses fonctionnalités, ChimioCare sollicite les autorisations Android suivantes :</p>
+            <ul>
+                <li><strong>Caméra (<code>CAMERA</code>) :</strong> Permet de scanner vos ordonnances et prendre des photos pour votre journal de bord.</li>
+                <li><strong>Accès aux Photos / Galerie :</strong> Permet d'importer des documents médicaux enregistrés dans votre appareil.</li>
+                <li><strong>Localisation (<code>ACCESS_FINE_LOCATION</code> / <code>ACCESS_COARSE_LOCATION</code>) :</strong> Permet de pré-remplir le lieu de vos rendez-vous et le lieu de prise de vos photos.</li>
+                <li><strong>Notifications et Alarmes (<code>POST_NOTIFICATIONS</code>, <code>SCHEDULE_EXACT_ALARM</code>) :</strong> Nécessaire pour programmer et afficher les rappels de prise de médicaments et vos rendez-vous médicaux importants.</li>
+                <li><strong>Données de Santé (<code>android.permission.health.*</code>) :</strong> Accès en lecture seule aux métriques de santé que vous choisissez d'importer depuis Health Connect.</li>
+            </ul>
+        </section>
+
+        <section id="fr-partage">
+            <h2>5. Partage des données avec des tiers</h2>
+            <p><strong>Nous ne vendons ni ne louons vos données personnelles ou médicales à quiconque.</strong></p>
+            <p>Certains services tiers de confiance sont intégrés à l'Application pour en assurer le fonctionnement technique :</p>
+            <ul>
+                <li><strong>Google Play Services & Google AdMob :</strong> Service d'affichage publicitaire anonymisé. Politique : <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>.</li>
+                <li><strong>RevenueCat :</strong> Gestion sécurisée des abonnements in-app via Google Play Billing. Politique : <a href="https://www.revenuecat.com/privacy/" target="_blank" rel="noopener">RevenueCat Privacy Policy</a>.</li>
+                <li><strong>Health Connect (Google) :</strong> Synchronisation locale des données de santé sur votre appareil Android.</li>
+            </ul>
+        </section>
+
+        <section id="fr-stockage">
+            <h2>6. Stockage, Sécurité et Durée de Conservation</h2>
+            <p><strong>Stockage local prioritaire :</strong> Vos données de suivi (journal, ordonnances, rappels, rendez-vous) sont enregistrées en priorité directement sur votre appareil mobile de manière sécurisée (SecureStore / stockage interne chiffré).</p>
+            <p><strong>Durée de conservation :</strong> Vos données sont conservées aussi longtemps que vous utilisez l'Application. En cas de désinstallation de l'Application ou de suppression des données depuis les paramètres de votre appareil, l'intégralité des données locales est définitivement effacée.</p>
+        </section>
+
+        <section id="fr-droits">
+            <h2>7. Vos droits selon le RGPD</h2>
+            <p>En vertu du Règlement Général sur la Protection des Données (RGPD), vous disposez des droits d'accès, de rectification, d'effacement (droit à l'oubli), de limitation du traitement et de portabilité des données. Vous pouvez révoquer vos autorisations à tout moment dans les réglages de votre smartphone.</p>
+        </section>
+
+        <section id="fr-enfants">
+            <h2>8. Protection des mineurs</h2>
+            <p>L'Application ChimioCare n'est pas destinée aux enfants de moins de 15 ans sans l'accord d'un parent ou tuteur légal.</p>
+        </section>
+
+        <section id="fr-contact">
+            <h2>9. Contact</h2>
+            <div class="highlight-box">
+                <strong>Contact DPO / Support ChimioCare :</strong><br>
+                Email : <a href="mailto:contact@chimiocare.com">contact@chimiocare.com</a><br>
+                Site web : <a href="https://chimiocare.com" target="_blank" rel="noopener">https://chimiocare.com</a>
+            </div>
+        </section>
+    </div>
+
+    <!-- =================================================================== -->
+    <!-- 2. ENGLISH (EN) -->
+    <!-- =================================================================== -->
+    <div id="lang-en" class="lang-content">
+        <header>
+            <h1>Privacy Policy</h1>
+            <p class="subtitle">Mobile Application <strong>ChimioCare</strong> (com.chimiocare.app)</p>
+            <span class="meta-info">Last updated: February 24, 2025</span>
+        </header>
+
+        <nav class="toc">
+            <h2>Table of Contents</h2>
+            <ul>
+                <li><a href="#en-intro">1. Introduction & Purpose</a></li>
+                <li><a href="#en-donnees">2. Collected Data & Purposes</a></li>
+                <li><a href="#en-health">3. Health Connect Commitments</a></li>
+                <li><a href="#en-auto">4. Device Permissions</a></li>
+                <li><a href="#en-partage">5. Sharing & Third Parties</a></li>
+                <li><a href="#en-stockage">6. Storage & Security</a></li>
+                <li><a href="#en-droits">7. Your Rights (GDPR)</a></li>
+                <li><a href="#en-enfants">8. Minors Protection</a></li>
+                <li><a href="#en-contact">9. Contact</a></li>
+            </ul>
+        </nav>
+
+        <section id="en-intro">
+            <h2>1. Introduction & Purpose</h2>
+            <p>
+                This Privacy Policy describes how the mobile application <strong>ChimioCare</strong> (hereinafter "the Application"), available on the Google Play Store under package <code>com.chimiocare.app</code>, collects, uses, stores, and protects your personal and health information.
+            </p>
+            <p>
+                ChimioCare is designed to support cancer patients in tracking chemotherapy treatments, managing medical appointments, taking medications, logging symptoms, and monitoring health metrics on a daily basis.
+            </p>
+            <div class="highlight-box">
+                <strong>Privacy & Compliance Commitment:</strong> We place the utmost importance on protecting your personal and medical data. The Application strictly complies with the General Data Protection Regulation (GDPR - EU 2016/679) and Google Play User Data Policies.
+            </div>
+        </section>
+
+        <section id="en-donnees">
+            <h2>2. Collected Data & Purposes</h2>
+            <p>The Application collects and processes only the data strictly necessary for providing medical tracking tools:</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Data Category</th>
+                        <th>Specific Data</th>
+                        <th>Purpose of Processing</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Health & Fitness Metrics</strong></td>
+                        <td>Heart rate, resting heart rate, oxygen saturation (SpO2), weight, blood pressure, body temperature, sleep tracking, step count.</td>
+                        <td>Displaying dashboards and charts to help you monitor your physical condition throughout your care journey.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Treatment & Medication</strong></td>
+                        <td>Chemotherapy cycles, appointment schedule, scanned prescriptions, medication reminders, journal logs.</td>
+                        <td>Organizing treatments, sending local reminders, and preventing missed doses or appointments.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Documents & Media</strong></td>
+                        <td>Prescription photos, medical report scans, photo logs.</td>
+                        <td>Digitizing and centralizing your personal medical documents in one secure app.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Location (Optional)</strong></td>
+                        <td>Approximate or precise geolocation coordinates (when authorized).</td>
+                        <td>Auto-filling medical appointment locations and geotagging journal entries.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Technical Data & Identifiers</strong></td>
+                        <td>Anonymized ad identifiers (AdMob), subscription/in-app purchase status (RevenueCat).</td>
+                        <td>Displaying non-intrusive ads and managing Premium features/subscriptions.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="en-health">
+            <h2>3. Strict Google Health Connect Commitments</h2>
+            <div class="highlight-box health">
+                <strong>Health Connect Privacy Policy (Google Play Policy):</strong><br>
+                The Application accesses health data via Android's <strong>Health Connect API</strong> (heart rate, blood pressure, SpO2, temperature, weight, sleep, steps) strictly upon explicit user consent.
+                <ul>
+                    <li>Data read from Health Connect is used <strong>exclusively</strong> to provide and improve health tracking features within ChimioCare.</li>
+                    <li>Health Connect data is <strong>never sold, rented, or transferred</strong> to third parties.</li>
+                    <li>Health Connect data is <strong>never used for advertising</strong>, marketing, or data brokerage.</li>
+                    <li>Data is not shared with credit reporting agencies or insurance companies.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="en-auto">
+            <h2>4. Device Permissions</h2>
+            <p>To operate effectively, ChimioCare requests the following Android permissions:</p>
+            <ul>
+                <li><strong>Camera (<code>CAMERA</code>):</strong> Scans prescriptions and captures photos for your medical log.</li>
+                <li><strong>Photo Library Access:</strong> Imports stored medical documents from your gallery.</li>
+                <li><strong>Location (<code>ACCESS_FINE_LOCATION</code> / <code>ACCESS_COARSE_LOCATION</code>):</strong> Pre-fills appointment venue locations.</li>
+                <li><strong>Notifications & Alarms (<code>POST_NOTIFICATIONS</code>, <code>SCHEDULE_EXACT_ALARM</code>):</strong> Schedules exact medication and appointment reminders.</li>
+                <li><strong>Health Data (<code>android.permission.health.*</code>):</strong> Read-only access to health metrics you choose to import from Health Connect.</li>
+            </ul>
+        </section>
+
+        <section id="en-partage">
+            <h2>5. Data Sharing & Third Parties</h2>
+            <p><strong>We do not sell or rent your personal or health data to anyone.</strong></p>
+            <p>Trusted third-party services are integrated solely for technical operations:</p>
+            <ul>
+                <li><strong>Google Play Services & Google AdMob:</strong> Anonymized advertising service. Policy: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>.</li>
+                <li><strong>RevenueCat:</strong> Secure in-app subscription management via Google Play Billing. Policy: <a href="https://www.revenuecat.com/privacy/" target="_blank" rel="noopener">RevenueCat Privacy Policy</a>.</li>
+                <li><strong>Health Connect (Google):</strong> Local health data synchronization on your Android device.</li>
+            </ul>
+        </section>
+
+        <section id="en-stockage">
+            <h2>6. Storage, Security & Retention</h2>
+            <p><strong>Local-First Storage:</strong> Your tracking data (journal, prescriptions, reminders, appointments) is stored primarily on your mobile device in an encrypted local storage (SecureStore).</p>
+            <p><strong>Data Retention:</strong> Your data is retained as long as you use the Application. Uninstalling the app or clearing local storage permanently erases all stored data.</p>
+        </section>
+
+        <section id="en-droits">
+            <h2>7. Your Rights under GDPR</h2>
+            <p>Under the GDPR, you have the right to access, rectify, erase (right to be forgotten), restrict processing, and export your personal data. You can revoke permissions at any time via Android system settings.</p>
+        </section>
+
+        <section id="en-enfants">
+            <h2>8. Minors Protection</h2>
+            <p>ChimioCare is not intended for children under 15 years of age without parental or legal guardian consent.</p>
+        </section>
+
+        <section id="en-contact">
+            <h2>9. Contact Us</h2>
+            <div class="highlight-box">
+                <strong>DPO / ChimioCare Support Contact:</strong><br>
+                Email: <a href="mailto:contact@chimiocare.com">contact@chimiocare.com</a><br>
+                Website: <a href="https://chimiocare.com" target="_blank" rel="noopener">https://chimiocare.com</a>
+            </div>
+        </section>
+    </div>
+
+    <!-- =================================================================== -->
+    <!-- 3. DEUTSCH (DE) -->
+    <!-- =================================================================== -->
+    <div id="lang-de" class="lang-content">
+        <header>
+            <h1>Datenschutzbestimmungen</h1>
+            <p class="subtitle">Mobile Anwendung <strong>ChimioCare</strong> (com.chimiocare.app)</p>
+            <span class="meta-info">Zuletzt aktualisiert: 24. Februar 2025</span>
+        </header>
+
+        <nav class="toc">
+            <h2>Inhaltsverzeichnis</h2>
+            <ul>
+                <li><a href="#de-intro">1. Einleitung und Zweck</a></li>
+                <li><a href="#de-donnees">2. Erhobene Daten und Zwecke</a></li>
+                <li><a href="#de-health">3. Health Connect Verpflichtungen</a></li>
+                <li><a href="#de-auto">4. Geräteberechtigungen</a></li>
+                <li><a href="#de-partage">5. Weitergabe an Dritte</a></li>
+                <li><a href="#de-stockage">6. Speicherung und Sicherheit</a></li>
+                <li><a href="#de-droits">7. Ihre Rechte (DSGVO)</a></li>
+                <li><a href="#de-enfants">8. Schutz von Minderjährigen</a></li>
+                <li><a href="#de-contact">9. Kontakt</a></li>
+            </ul>
+        </nav>
+
+        <section id="de-intro">
+            <h2>1. Einleitung und Zweck</h2>
+            <p>
+                Diese Datenschutzbestimmungen beschreiben, wie die mobile Anwendung <strong>ChimioCare</strong> (Paket <code>com.chimiocare.app</code> im Google Play Store) Ihre persönlichen Daten und Gesundheitsdaten erhebt, nutzt, speichert und schützt.
+            </p>
+            <p>
+                ChimioCare unterstützt Krebspatienten bei der Nachverfolgung ihrer Chemotherapie, der Verwaltung von Arztterminen, der Medikamenteneinnahme und der Erfassung von Krankheitssymptomen und Gesundheitswerten.
+            </p>
+            <div class="highlight-box">
+                <strong>Datenschutzkonformität:</strong> Die Anwendung hält sich strikt an die Datenschutz-Grundverordnung (DSGVO - EU 2016/679) sowie die Google Play Nutzerdaten-Richtlinien.
+            </div>
+        </section>
+
+        <section id="de-donnees">
+            <h2>2. Erhobene Daten und Zwecke</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Datenkategorie</th>
+                        <th>Spezifische Daten</th>
+                        <th>Verarbeitungszweck</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Gesundheitsmetriken</strong></td>
+                        <td>Herzfrequenz, Ruhepuls, Sauerstoffsättigung (SpO2), Gewicht, Blutdruck, Körpertemperatur, Schlaf, Schrittzahl.</td>
+                        <td>Anzeige von Dashboards und Diagrammen zur Überwachung des körperlichen Zustands während der Behandlung.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Behandlung & Medikamente</strong></td>
+                        <td>Chemotherapie-Zyklen, Terminplaner, gescannte Rezepte, Medikamentenerinnerungen, Tagebuch.</td>
+                        <td>Organisation von Behandlungen und lokale Erinnerungen zur Vermeidung von Einnahmefehlern.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Dokumente & Medien</strong></td>
+                        <td>Fotos von Rezepten, medizinischen Berichten und Tagebucheinträgen.</td>
+                        <td>Digitalisierung und zentrale Speicherung persönlicher medizinischer Dokumente.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Standort (Optional)</strong></td>
+                        <td>Ungefähre oder genaue Standortkoordinaten (falls freigegeben).</td>
+                        <td>Automatisches Ausfüllen des Orts von Arztterminen oder Fotos.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Technische Daten</strong></td>
+                        <td>Anonymisierte Werbe-IDs (AdMob), Abo-Status (RevenueCat).</td>
+                        <td>Anzeige unaufdringlicher Werbung und Verwaltung von Premium-Funktionen.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="de-health">
+            <h2>3. Strikte Verpflichtungen zu Google Health Connect</h2>
+            <div class="highlight-box health">
+                <strong>Health Connect Datenschutzgarantie (Google Play Richtlinie):</strong><br>
+                Die Anwendung greift auf Gesundheitsdaten über die Android <strong>Health Connect API</strong> ausschließlich nach ausdrücklicher Zustimmung des Nutzers zu.
+                <ul>
+                    <li>Health Connect-Daten werden <strong>ausschließlich</strong> für die Gesundheitsfunktionen der ChimioCare-App verwendet.</li>
+                    <li>Diese Daten werden <strong>niemals verkauft, vermietet oder an Dritte übertragen</strong>.</li>
+                    <li>Health Connect-Daten werden <strong>niemals für Werbung</strong>, Marketing oder Datenhandel verwendet.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="de-auto">
+            <h2>4. Geräteberechtigungen</h2>
+            <ul>
+                <li><strong>Kamera (<code>CAMERA</code>):</strong> Scannen von Rezepten und Fotos für Ihr Tagebuch.</li>
+                <li><strong>Fotos / Galerie:</strong> Importieren medizinischer Dokumente aus Ihrer Galerie.</li>
+                <li><strong>Standort:</strong> Vorausfüllen von Terminorten.</li>
+                <li><strong>Benachrichtigungen & Alarme:</strong> Rechtzeitige Erinnerung an Medikamente und Termine.</li>
+                <li><strong>Gesundheitsdaten (<code>android.permission.health.*</code>):</strong> Lesezugriff auf importierte Werte aus Health Connect.</li>
+            </ul>
+        </section>
+
+        <section id="de-partage">
+            <h2>5. Weitergabe an Dritte</h2>
+            <p><strong>Wir verkaufen oder vermieten Ihre personenbezogenen oder medizinischen Daten an niemanden.</strong></p>
+            <p>Eingebundene technische Dienste:</p>
+            <ul>
+                <li><strong>Google Play Services & Google AdMob:</strong> Anonymisierte Werbung. Policy: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>.</li>
+                <li><strong>RevenueCat:</strong> Sichere Verwaltung von In-App-Abonnements. Policy: <a href="https://www.revenuecat.com/privacy/" target="_blank" rel="noopener">RevenueCat Privacy Policy</a>.</li>
+                <li><strong>Health Connect (Google):</strong> Lokale Datensynchronisierung auf Ihrem Android-Gerät.</li>
+            </ul>
+        </section>
+
+        <section id="de-stockage">
+            <h2>6. Speicherung und Sicherheit</h2>
+            <p><strong>Lokale Speicherung:</strong> Ihre Nachverfolgungsdaten werden vorrangig direkt auf Ihrem Smartphone in einem verschlüsselten Speicherbereich (SecureStore) abgelegt.</p>
+            <p><strong>Löschung:</strong> Beim Deinstallieren der App werden alle lokalen Daten dauerhaft gelöscht.</p>
+        </section>
+
+        <section id="de-droits">
+            <h2>7. Ihre Rechte gemäß DSGVO</h2>
+            <p>Sie haben das Recht auf Auskunft, Berichtigung, Löschung (Recht auf Vergessenwerden), Einschränkung der Verarbeitung und Datenübertragbarkeit. Berechtigungen können jederzeit in den Android-Einstellungen widerrufen werden.</p>
+        </section>
+
+        <section id="de-enfants">
+            <h2>8. Schutz von Minderjährigen</h2>
+            <p>ChimioCare richtet sich nicht an Kinder unter 15 Jahren ohne Zustimmung der Erziehungsberechtigten.</p>
+        </section>
+
+        <section id="de-contact">
+            <h2>9. Kontakt</h2>
+            <div class="highlight-box">
+                <strong>DPO / Support ChimioCare:</strong><br>
+                E-Mail: <a href="mailto:contact@chimiocare.com">contact@chimiocare.com</a><br>
+                Website: <a href="https://chimiocare.com" target="_blank" rel="noopener">https://chimiocare.com</a>
+            </div>
+        </section>
+    </div>
+
+    <!-- =================================================================== -->
+    <!-- 4. LËTZEBUERGESCH (LB) -->
+    <!-- =================================================================== -->
+    <div id="lang-lb" class="lang-content">
+        <header>
+            <h1>Dateschutzerklärung</h1>
+            <p class="subtitle">Mobile Applikatioun <strong>ChimioCare</strong> (com.chimiocare.app)</p>
+            <span class="meta-info">Leschte Update: 24. Februar 2025</span>
+        </header>
+
+        <nav class="toc">
+            <h2>Inhalt</h2>
+            <ul>
+                <li><a href="#lb-intro">1. Aféierung an Zweck</a></li>
+                <li><a href="#lb-donnees">2. Gesammelt Daten a Zwecker</a></li>
+                <li><a href="#lb-health">3. Health Connect Verflichtungen</a></li>
+                <li><a href="#lb-auto">4. Apparat Autorisatiounen</a></li>
+                <li><a href="#lb-partage">5. Deelen mat Drëtt-Ubidder</a></li>
+                <li><a href="#lb-stockage">6. Späicherung a Sécherheet</a></li>
+                <li><a href="#lb-droits">7. Äre Rechter (DSGVO)</a></li>
+                <li><a href="#lb-enfants">8. Schutz vu Minderjäregen</a></li>
+                <li><a href="#lb-contact">9. Kontakt</a></li>
+            </ul>
+        </nav>
+
+        <section id="lb-intro">
+            <h2>1. Aféierung an Zweck</h2>
+            <p>
+                Dës Dateschutzerklärung beschreift wéi d'mobile Applikatioun <strong>ChimioCare</strong> (Package <code>com.chimiocare.app</code> am Google Play Store) Är perséinlech Daten a Gesondheetsdaten sammelt, benotzt, späichert a schützt.
+            </p>
+            <p>
+                ChimioCare hëlleft Patienter bei der Suivi vun hirer Chemotherapie, der Verwaltung vu medezineschen Rendez-vousen, der Medikamenteneinnahm an der Erfassung vu Symptomer an Gesondheetswäerter.
+            </p>
+            <div class="highlight-box">
+                <strong>Schutz vun de perséinlechen Daten:</strong> D'Applikatioun respektéiert strikt de General Data Protection Regulation (GDPR / DSGVO) an d'Regele vum Google Play Store.
+            </div>
+        </section>
+
+        <section id="lb-donnees">
+            <h2>2. Gesammelt Daten a Zwecker</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Datenkategorie</th>
+                        <th>Spezifesch Daten</th>
+                        <th>Zweck</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Gesondheetswäerter</strong></td>
+                        <td>Häerzfrequenz, Roupuls, Sauerstoffstoffsättlechung (SpO2), Gewiicht, Bluttdrock, Temperatur, Schlaf, Schrëtt.</td>
+                        <td>Uweise vu Grafiken a Tabellen fir de kierperlechen Zoustand während der Behandlung ze verfollegen.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Traitement & Medikamenter</strong></td>
+                        <td>Chemotherapie-Zyklen, Rendez-vousen, gescannte Rezepter, Erënnerungen fir Medikamenter, Tagebuch.</td>
+                        <td>Organisatioun vun de Traitementer a lokale Erënnerungen.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Dokumenter & Medialen</strong></td>
+                        <td>Fotoe vu Rezepter a medezinesche Rapporten.</td>
+                        <td>Digitaliséierung a zentral Späicherung vu medezineschen Dokumenter.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Lokalisatioun (Optionell)</strong></td>
+                        <td>Geolokalisatiounskoordinaten (wann erlaabt).</td>
+                        <td>Automatesch Ausfëllung vum Ort vu Rendez-vousen oder Fotoen.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Technesch Daten</strong></td>
+                        <td>Anonymiséiert Werbe-IDs (AdMob), In-App Abonnements-Status (RevenueCat).</td>
+                        <td>Uweise vu Reklammen a Verwaltung vu Premium-Fonctiounen.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="lb-health">
+            <h2>3. Strikte Verflichtunge fir Google Health Connect</h2>
+            <div class="highlight-box health">
+                <strong>Health Connect Privatsphär (Google Play Policy):</strong><br>
+                D'Applikatioun gräift op Gesondheetsdaten iwwer d'Android <strong>Health Connect API</strong> nëmmen no ausdrécklecher Zoustëmmung vum Benotzer op.
+                <ul>
+                    <li>Health Connect Daten ginn <strong>exklusiv</strong> fir d'Gesondheetsfonctioune vu ChimioCare benotzt.</li>
+                    <li>Dës Daten ginn <strong>ni verkaaft, vermuet oder un Drëtt-Ubidder weidergi</strong>.</li>
+                    <li>Health Connect Daten ginn <strong>ni fir Reklammen</strong> oder Marketing benotzt.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="lb-auto">
+            <h2>4. Apparat Autorisatiounen</h2>
+            <ul>
+                <li><strong>Kamera (<code>CAMERA</code>):</strong> Scanner vu Rezepter a Fotoe fir d'Tagebuch.</li>
+                <li><strong>Fotoen / Galerie:</strong> Importéieren vu medezineschen Dokumenter.</li>
+                <li><strong>Lokalisatioun:</strong> Virausfëllen vu Rendez-vous Plazen.</li>
+                <li><strong>Notifikatiounen & Alarm:</strong> Erënnerunge fir Medikamenter a Rendez-vousen.</li>
+                <li><strong>Gesondheetsdaten:</strong> Liese vu Gesondheetswäerter aus Health Connect.</li>
+            </ul>
+        </section>
+
+        <section id="lb-partage">
+            <h2>5. Deelen mat Drëtt-Ubidder</h2>
+            <p><strong>Mir verkafen an vermieten Är perséinlech oder medezinesch Daten un keen.</strong></p>
+            <p>Integréiert technesch Servicer:</p>
+            <ul>
+                <li><strong>Google Play Services & Google AdMob:</strong> Anonymiséiert Reklammen. Policy: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>.</li>
+                <li><strong>RevenueCat:</strong> Gestion vun In-App Abonnements. Policy: <a href="https://www.revenuecat.com/privacy/" target="_blank" rel="noopener">RevenueCat Privacy Policy</a>.</li>
+                <li><strong>Health Connect (Google):</strong> Lokale Synchronisatioun vun de Gesondheetsdaten.</li>
+            </ul>
+        </section>
+
+        <section id="lb-stockage">
+            <h2>6. Späicherung a Sécherheet</h2>
+            <p><strong>Lokale Späicherung:</strong> Är Daten ginn virun allem direkt op Ärem Smartphone an engem verschlësselte Späicherberäich (SecureStore) gespäichert.</p>
+            <p><strong>Lëschen:</strong> Wann Dir d'App läscht, ginn alleguer déi lokal Daten fir ëmmer geläscht.</p>
+        </section>
+
+        <section id="lb-droits">
+            <h2>7. Äre Rechter (DSGVO)</h2>
+            <p>Dir hutt d'Recht op Zougang, Korrektur, Läschung, an Datenübertragbarkeet. Autorisatioune kënnen zu all Moment an den Android-Astellungen zréckgezunn ginn.</p>
+        </section>
+
+        <section id="lb-enfants">
+            <h2>8. Schutz vu Minderjäregen</h2>
+            <p>ChimioCare ass net fir Kanner ënner 15 Joer ouni d'Zoustëmmung vun den Elteren geduecht.</p>
+        </section>
+
+        <section id="lb-contact">
+            <h2>9. Kontakt</h2>
+            <div class="highlight-box">
+                <strong>DPO / Support ChimioCare:</strong><br>
+                E-Mail: <a href="mailto:contact@chimiocare.com">contact@chimiocare.com</a><br>
+                Website: <a href="https://chimiocare.com" target="_blank" rel="noopener">https://chimiocare.com</a>
+            </div>
+        </section>
+    </div>
+
+    <!-- =================================================================== -->
+    <!-- 5. ESPAÑOL (ES) -->
+    <!-- =================================================================== -->
+    <div id="lang-es" class="lang-content">
+        <header>
+            <h1>Política de Privacidad</h1>
+            <p class="subtitle">Aplicación móvil <strong>ChimioCare</strong> (com.chimiocare.app)</p>
+            <span class="meta-info">Última actualización: 24 de febrero de 2025</span>
+        </header>
+
+        <nav class="toc">
+            <h2>Índice</h2>
+            <ul>
+                <li><a href="#es-intro">1. Introducción y Objeto</a></li>
+                <li><a href="#es-donnees">2. Datos recopilados y Finalidades</a></li>
+                <li><a href="#es-health">3. Compromisos de Health Connect</a></li>
+                <li><a href="#es-auto">4. Permisos del dispositivo</a></li>
+                <li><a href="#es-partage">5. Compartición y Terceros</a></li>
+                <li><a href="#es-stockage">6. Almacenamiento y Seguridad</a></li>
+                <li><a href="#es-droits">7. Sus Derechos (RGPD)</a></li>
+                <li><a href="#es-enfants">8. Protección de Menores</a></li>
+                <li><a href="#es-contact">9. Contacto</a></li>
+            </ul>
+        </nav>
+
+        <section id="es-intro">
+            <h2>1. Introducción y Objeto</h2>
+            <p>
+                La presente Política de Privacidad describe cómo la aplicación móvil <strong>ChimioCare</strong> (paquete <code>com.chimiocare.app</code> en Google Play Store) recopila, utiliza, almacena y protege sus datos personales y de salud.
+            </p>
+            <p>
+                ChimioCare está diseñada para acompañar a los pacientes en el seguimiento de sus tratamientos de quimioterapia, la gestión de citas médicas, la toma de medicamentos y el control de síntomas y métricas de salud.
+            </p>
+            <div class="highlight-box">
+                <strong>Cumplimiento de privacidad:</strong> La Aplicación cumple estrictamente con el Reglamento General de Protección de Datos (RGPD - UE 2016/679) y las políticas de datos de usuario de Google Play.
+            </div>
+        </section>
+
+        <section id="es-donnees">
+            <h2>2. Datos recopilados y Finalidades</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Categoría de datos</th>
+                        <th>Datos específicos</th>
+                        <th>Finalidad del tratamiento</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Métricas de Salud</strong></td>
+                        <td>Frecuencia cardíaca, ritmo en reposo, saturación de oxígeno (SpO2), peso, presión arterial, temperatura, sueño, pasos.</td>
+                        <td>Visualización de paneles y gráficos para monitorear su estado físico durante el tratamiento.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Tratamiento y Medicamentos</strong></td>
+                        <td>Ciclos de quimioterapia, calendario de citas, recetas escaneadas, recordatorios de medicamentos, diario de seguimiento.</td>
+                        <td>Organización de tratamientos y alertas locales para evitar descuidos.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Documentos y Medios</strong></td>
+                        <td>Fotos de recetas, informes médicos escaneados, imágenes del diario.</td>
+                        <td>Digitalización y centralización de sus documentos médicos personales.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Ubicación (Opcional)</strong></td>
+                        <td>Coordenadas de geolocalización aproximadas o precisas (si se autoriza).</td>
+                        <td>Auto-relleno de la ubicación de citas médicas o fotos.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Datos Técnicos</strong></td>
+                        <td>Identificadores publicitarios anonimizados (AdMob), estado de suscripción (RevenueCat).</td>
+                        <td>Muestra de anuncios no intrusivos y gestión de funciones Premium.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="es-health">
+            <h2>3. Compromisos estrictos de Google Health Connect</h2>
+            <div class="highlight-box health">
+                <strong>Garantía de Privacidad de Health Connect (Google Play Policy):</strong><br>
+                La Aplicación accede a los datos de salud mediante la API <strong>Health Connect</strong> de Android únicamente tras la autorización explícita del usuario.
+                <ul>
+                    <li>Los datos leídos de Health Connect se utilizan <strong>exclusivamente</strong> para las funciones de salud de ChimioCare.</li>
+                    <li>Estos datos <strong>nunca se venden, alquilan ni transfieren</strong> a terceros.</li>
+                    <li>Los datos de Health Connect <strong>nunca se utilizan con fines publicitarios</strong> ni de comercialización de datos.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="es-auto">
+            <h2>4. Permisos del dispositivo</h2>
+            <ul>
+                <li><strong>Cámara (<code>CAMERA</code>):</strong> Escaneo de recetas y fotos para su diario médico.</li>
+                <li><strong>Fotos / Galería:</strong> Importación de documentos médicos desde su galería.</li>
+                <li><strong>Ubicación:</strong> Relleno automático de ubicaciones de citas.</li>
+                <li><strong>Notificaciones y Alarmas:</strong> Recordatorios exactos de medicamentos y citas.</li>
+                <li><strong>Datos de Salud:</strong> Lectura de métricas de salud importadas desde Health Connect.</li>
+            </ul>
+        </section>
+
+        <section id="es-partage">
+            <h2>5. Compartición y Terceros</h2>
+            <p><strong>No vendemos ni alquilamos sus datos personales o médicos a nadie.</strong></p>
+            <p>Servicios técnicos integrados:</p>
+            <ul>
+                <li><strong>Google Play Services & Google AdMob:</strong> Publicidad anonimizada. Política: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>.</li>
+                <li><strong>RevenueCat:</strong> Gestión segura de suscripciones in-app. Política: <a href="https://www.revenuecat.com/privacy/" target="_blank" rel="noopener">RevenueCat Privacy Policy</a>.</li>
+                <li><strong>Health Connect (Google):</strong> Sincronización local de datos de salud en su dispositivo Android.</li>
+            </ul>
+        </section>
+
+        <section id="es-stockage">
+            <h2>6. Almacenamiento y Seguridad</h2>
+            <p><strong>Almacenamiento Local:</strong> Sus datos se almacenan prioritariamente de forma segura en su teléfono móvil (SecureStore encriptado).</p>
+            <p><strong>Eliminación:</strong> Al desinstalar la aplicación, todos los datos locales se eliminan permanentemente.</p>
+        </section>
+
+        <section id="es-droits">
+            <h2>7. Sus Derechos (RGPD)</h2>
+            <p>Tiene derecho a acceder, rectificar, suprimir (derecho al olvido), limitar el tratamiento y exportar sus datos. Puede revocar los permisos en cualquier momento desde los ajustes de Android.</p>
+        </section>
+
+        <section id="es-enfants">
+            <h2>8. Protección de Menores</h2>
+            <p>ChimioCare no está dirigida a menores de 15 años sin el consentimiento de sus padres o tutores legales.</p>
+        </section>
+
+        <section id="es-contact">
+            <h2>9. Contacto</h2>
+            <div class="highlight-box">
+                <strong>DPO / Soporte ChimioCare:</strong><br>
+                Correo electrónico: <a href="mailto:contact@chimiocare.com">contact@chimiocare.com</a><br>
+                Sitio web: <a href="https://chimiocare.com" target="_blank" rel="noopener">https://chimiocare.com</a>
+            </div>
+        </section>
+    </div>
+
+    <!-- =================================================================== -->
+    <!-- 6. ITALIANO (IT) -->
+    <!-- =================================================================== -->
+    <div id="lang-it" class="lang-content">
+        <header>
+            <h1>Informativa sulla Privacy</h1>
+            <p class="subtitle">Applicazione mobile <strong>ChimioCare</strong> (com.chimiocare.app)</p>
+            <span class="meta-info">Ultimo aggiornamento: 24 Febbraio 2025</span>
+        </header>
+
+        <nav class="toc">
+            <h2>Sommario</h2>
+            <ul>
+                <li><a href="#it-intro">1. Introduzione e Oggetto</a></li>
+                <li><a href="#it-donnees">2. Dati raccolti e Finalità</a></li>
+                <li><a href="#it-health">3. Impegni Health Connect</a></li>
+                <li><a href="#it-auto">4. Autorizzazioni del dispositivo</a></li>
+                <li><a href="#it-partage">5. Condivisione e Terze Parti</a></li>
+                <li><a href="#it-stockage">6. Conservazione e Sicurezza</a></li>
+                <li><a href="#it-droits">7. I tuoi Diritti (GDPR)</a></li>
+                <li><a href="#it-enfants">8. Protezione dei Minori</a></li>
+                <li><a href="#it-contact">9. Contatto</a></li>
+            </ul>
+        </nav>
+
+        <section id="it-intro">
+            <h2>1. Introduzione e Oggetto</h2>
+            <p>
+                La presente Informativa sulla Privacy descrive come l'applicazione mobile <strong>ChimioCare</strong> (pacchetto <code>com.chimiocare.app</code> su Google Play Store) raccoglie, utilizza, conserva e protegge i tuoi dati personali e sanitari.
+            </p>
+            <p>
+                ChimioCare è progettata per accompagnare i pazienti nel monitoraggio dei trattamenti di chemioterapia, nella gestione degli appuntamenti medici, nell'assunzione dei farmaci e nel tracciamento dei sintomi e delle metriche di salute.
+            </p>
+            <div class="highlight-box">
+                <strong>Conformità alla Privacy:</strong> L'Applicazione rispetta rigorosamente il Regolamento Generale sulla Protezione dei Dati (GDPR - UE 2016/679) e le norme sui dati utente di Google Play.
+            </div>
+        </section>
+
+        <section id="it-donnees">
+            <h2>2. Dati raccolti e Finalità</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Categoria di Dati</th>
+                        <th>Dati Specifici</th>
+                        <th>Finalità del Trattamento</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Metriche Sanitarie</strong></td>
+                        <td>Frequenza cardiaca, battito a riposo, saturazione di ossigeno (SpO2), peso, pressione arteriosa, temperatura, sonno, passi.</td>
+                        <td>Visualizzazione di dashboard e grafici per monitorare le condizioni fisiche durante il percorso di cura.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Trattamento e Farmaci</strong></td>
+                        <td>Cicli di chemioterapia, calendario appuntamenti, ricette scansionate, promemoria farmaci, diario.</td>
+                        <td>Organizzazione dei trattamenti e promemoria locali per evitare dimenticanze.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Documenti e Media</strong></td>
+                        <td>Foto di ricette, referti medici scansionati, immagini del diario.</td>
+                        <td>Digitalizzazione e centralizzazione dei documenti medici personali.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Posizione (Opzionale)</strong></td>
+                        <td>Coordinate di geolocalizzazione approssimative o precise (se autorizzate).</td>
+                        <td>Compilazione automatica del luogo degli appuntamenti medici o delle foto.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Dati Tecnici</strong></td>
+                        <td>Identificativi pubblicitari anonimizzati (AdMob), stato abbonamento (RevenueCat).</td>
+                        <td>Visualizzazione di annunci non invasivi e gestione delle funzionalità Premium.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="it-health">
+            <h2>3. Rigorosi Impegni per Google Health Connect</h2>
+            <div class="highlight-box health">
+                <strong>Garanzia di Privacy Health Connect (Google Play Policy):</strong><br>
+                L'Applicazione accede ai dati sanitari tramite l'API <strong>Health Connect</strong> di Android solo previa autorizzazione esplicita dell'utente.
+                <ul>
+                    <li>I dati letti da Health Connect sono utilizzati <strong>esclusivamente</strong> per le funzionalità sanitarie dell'app ChimioCare.</li>
+                    <li>Questi dati non vengono <strong>mai venduti, affittati o trasferiti</strong> a terzi.</li>
+                    <li>I dati di Health Connect non vengono <strong>mai utilizzati a fini pubblicitari</strong> o di brokeraggio dati.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="it-auto">
+            <h2>4. Autorizzazioni del dispositivo</h2>
+            <ul>
+                <li><strong>Fotocamera (<code>CAMERA</code>):</strong> Scansione di ricette e foto per il diario medico.</li>
+                <li><strong>Foto / Galleria:</strong> Importazione di documenti medici dalla galleria.</li>
+                <li><strong>Posizione:</strong> Pre-compilazione del luogo degli appuntamenti.</li>
+                <li><strong>Notifiche e Allarmi:</strong> Promemoria precisi per farmaci e appuntamenti.</li>
+                <li><strong>Dati Sanitari:</strong> Lettura delle metriche di salute importate da Health Connect.</li>
+            </ul>
+        </section>
+
+        <section id="it-partage">
+            <h2>5. Condivisione e Terze Parti</h2>
+            <p><strong>Non vendiamo né affittiamo i tuoi dati personali o sanitari a nessuno.</strong></p>
+            <p>Servizi tecnici integrati:</p>
+            <ul>
+                <li><strong>Google Play Services & Google AdMob:</strong> Pubblicità anonimizzata. Policy: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>.</li>
+                <li><strong>RevenueCat:</strong> Gestione sicura degli abbonamenti in-app. Policy: <a href="https://www.revenuecat.com/privacy/" target="_blank" rel="noopener">RevenueCat Privacy Policy</a>.</li>
+                <li><strong>Health Connect (Google):</strong> Sincronizzazione locale dei dati sanitari sul dispositivo Android.</li>
+            </ul>
+        </section>
+
+        <section id="it-stockage">
+            <h2>6. Conservazione e Sicurezza</h2>
+            <p><strong>Conservazione Locale:</strong> I tuoi dati sono memorizzati in via prioritaria in modo sicuro direttamente sul tuo smartphone (SecureStore crittografato).</p>
+            <p><strong>Cancellazione:</strong> Disinstallando l'app, tutti i dati locali vengono cancellati in modo permanente.</p>
+        </section>
+
+        <section id="it-droits">
+            <h2>7. I tuoi Diritti (GDPR)</h2>
+            <p>Hai il diritto di accedere, rettificare, cancellare (diritto all'oblio), limitare il trattamento ed esportare i tuoi dati. Puoi revocare le autorizzazioni in qualsiasi momento dalle impostazioni di Android.</p>
+        </section>
+
+        <section id="it-enfants">
+            <h2>8. Protezione dei Minori</h2>
+            <p>ChimioCare non è destinata ai minori di 15 anni senza il consenso dei genitori o dei tutori legali.</p>
+        </section>
+
+        <section id="it-contact">
+            <h2>9. Contatto</h2>
+            <div class="highlight-box">
+                <strong>DPO / Supporto ChimioCare:</strong><br>
+                Email: <a href="mailto:contact@chimiocare.com">contact@chimiocare.com</a><br>
+                Sito web: <a href="https://chimiocare.com" target="_blank" rel="noopener">https://chimiocare.com</a>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 ChimioCare. Tous droits réservés / All rights reserved.</p>
+        <p>Cette page Web respecte l'ensemble des consignes d'accessibilité et de sécurité requises par Google Play Store.</p>
+    </footer>
+</div>
+
+<script>
+    function switchLanguage(lang) {
+        // Cacher toutes les sections de langues
+        const contents = document.querySelectorAll('.lang-content');
+        contents.forEach(el => el.classList.remove('active'));
+
+        // Afficher la langue sélectionnée
+        const selected = document.getElementById('lang-' + lang);
+        if (selected) {
+            selected.classList.add('active');
+        }
+
+        // Mettre à jour l'attribut lang de html
+        document.documentElement.lang = lang;
+
+        // Mettre à jour le titre du document selon la langue
+        const titles = {
+            'fr': 'Politique de Confidentialité — ChimioCare',
+            'en': 'Privacy Policy — ChimioCare',
+            'de': 'Datenschutzbestimmungen — ChimioCare',
+            'lb': 'Dateschutzerklärung — ChimioCare',
+            'es': 'Política de Privacidad — ChimioCare',
+            'it': 'Informativa sulla Privacy — ChimioCare'
+        };
+        if (titles[lang]) {
+            document.title = titles[lang];
+        }
+
+        // Sauvegarder dans le localStorage
+        try {
+            localStorage.setItem('chimiocare_privacy_lang', lang);
+        } catch (e) {}
+    }
+
+    // Détection automatique de la langue au chargement
+    window.addEventListener('DOMContentLoaded', () => {
+        let defaultLang = 'fr';
+
+        // 1. Essayer de récupérer le choix sauvegardé
+        try {
+            const savedLang = localStorage.getItem('chimiocare_privacy_lang');
+            if (savedLang && ['fr', 'en', 'de', 'lb', 'es', 'it'].includes(savedLang)) {
+                defaultLang = savedLang;
+            } else {
+                // 2. Sinon détecter la langue du navigateur
+                const userLang = (navigator.language || navigator.userLanguage || '').toLowerCase();
+                if (userLang.startsWith('en')) defaultLang = 'en';
+                else if (userLang.startsWith('de')) defaultLang = 'de';
+                else if (userLang.startsWith('lb') || userLang.startsWith('lu')) defaultLang = 'lb';
+                else if (userLang.startsWith('es')) defaultLang = 'es';
+                else if (userLang.startsWith('it')) defaultLang = 'it';
+                else defaultLang = 'fr';
+            }
+        } catch (e) {}
+
+        // Appliquer la langue initiale
+        const select = document.getElementById('langSelect');
+        if (select) {
+            select.value = defaultLang;
+            switchLanguage(defaultLang);
+        }
+    });
+</script>
+
+</body>
+</html>
